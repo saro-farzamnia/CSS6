@@ -1,0 +1,37 @@
+#cantainer{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.box{
+    position: relative;
+    height: 75px;
+    width: 200px;
+    background-color: brown;
+    border-radius: 30%;
+    margin-top: 20%;
+}
+a{
+    position: absolute;
+    color: rgb(0, 255, 0);
+    margin-top: 19.66%;
+    text-decoration: none;
+}
+a::before{
+    content:"";
+    position: absolute;
+    border: 0.9rem solid rgb(0, 255, 0);
+    border-bottom-right-radius: 100%;
+    border-top-left-radius: 100%;
+    margin-left: 169%;
+    z-index: 1;
+}
+a::after{
+    content:"";
+    position: absolute;
+    border: 1.4rem solid rgb(0, 61, 0);
+    border-bottom-right-radius: 100%;
+    border-top-left-radius: 100%;
+    margin-left: 160%;
+    margin-top: -90px;
+}
